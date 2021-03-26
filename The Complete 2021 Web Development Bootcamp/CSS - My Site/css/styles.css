@@ -1,21 +1,36 @@
 body {
+    color: #40514e;
     margin: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
 }
 
 h1 {
-    font-size: 90px;
-    margin-top: 0;
-    font-family: 'Sacramento', cursive;
+    color: #66BFBF;
+    font-size: 5.625rem;
+    line-height: 2;
+    margin: 50px auto 0 auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
+    color: #66BFBF;
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
 }
 
 h3 {
+    color: #11999E;
     font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    border-style: none;
+    margin: 50px auto;
+    border-color: #dddddd;
+    border-top-style: dotted;
+    border-width: 5px;
+    width: 5%;
 }
 
 /****** Class ******/
@@ -27,14 +42,26 @@ h3 {
 }
 
 .bottom-container {
+    padding: 20px;
+    background-color: #66BFBF;
+}
 
+.footer-link {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .middle-container {
 
 }
 
-.pro {
+.copyright {
+    color: #eaf6f6;
+    font-size: .75rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.make {
     text-decoration: underline;
 }
 
@@ -44,16 +71,67 @@ h3 {
     right: 300px;
 }
 
+.sub-header {
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: normal;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.code-image {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.artsy-image {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
 .top-container {
     background-color: #e4f9f5;
     position: relative;
     padding-top: 100px;
 }
 
+.BUTTON_AMN {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   margin: 10px auto 60px auto;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 30px;
+   font-weight: 500;
+   padding: 20px;
+   background-color: #66BFBF;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON_AMN:hover {
+   background: #007580;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
 /****** ID ******/
 
 #my-face {
     border-radius: 10%;
+    margin-top: 30px;
     width: 250px;
     height: 250px;
 }
