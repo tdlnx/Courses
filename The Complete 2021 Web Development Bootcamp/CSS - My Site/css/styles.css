@@ -1,3 +1,59 @@
 body {
-    background-color: blue;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 90px;
+    margin-top: 0;
+    font-family: 'Sacramento', cursive;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/****** Class ******/
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.bottom-container {
+
+}
+
+.middle-container {
+
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 50px;
+    right: 300px;
+}
+
+.top-container {
+    background-color: #e4f9f5;
+    position: relative;
+    padding-top: 100px;
+}
+
+/****** ID ******/
+
+#my-face {
+    border-radius: 10%;
+    width: 250px;
+    height: 250px;
 }
