@@ -9,13 +9,11 @@
 </head>
 
 <body>
-
     <?php
-    $title = "Travis Witt Official Site";
+
+    $numberList = array();
+
     ?>
-
-    <h1><?php echo $title ?></h1>
-
 </body>
 
 </html>
