@@ -1,0 +1,44 @@
+This lesson was basically an overview of basic SQL. Here's some of the output for looking at a table and selecting the first row.
+
+mysql> show databases
+-> ;
++--------------------+
+| Database |
++--------------------+
+| information_schema |
+| mysql |
+| mytodo |
+| performance_schema |
+| sys |
++--------------------+
+5 rows in set (0.01 sec)
+
+mysql> use mytodo;
+Database changed
+mysql> show tables;
++------------------+
+| Tables_in_mytodo |
++------------------+
+| todos |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> describe todos;
++-------------+------------+------+-----+---------+----------------+
+| Field | Type | Null | Key | Default | Extra |
++-------------+------------+------+-----+---------+----------------+
+| id | int | NO | PRI | NULL | auto_increment |
+| description | text | NO | | NULL | |
+| completed | tinyint(1) | NO | | NULL | |
++-------------+------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from todos where id = 1;
++----+-----------------+-----------+
+| id | description | completed |
++----+-----------------+-----------+
+| 1 | Go to the store | 0 |
++----+-----------------+-----------+
+1 row in set (0.00 sec)
+
+mysql>
