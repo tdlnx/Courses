@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Testing</title>
+    <title>Lesson 6 Preview</title>
 </head>
 
 <body>
