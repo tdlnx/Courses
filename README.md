@@ -10,3 +10,5 @@ It's very likely nobody will read this, but if you're reading this now, hi there
 [The Complete 2021 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 
 [PHP for Beginners - Become a PHP Master](https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/)
+
+[PHP for Beginners (Laracasts)](https://laracasts.com/series/php-for-beginners)
