@@ -1,22 +1,24 @@
 <?php
 
-/*
-* This whole thing doesn't work for some reason eventhough my config looks
-* exactly like the instructor's. There's got to be something else wrong but
-* I'm not looking any more today.
-*/
+/* The data.php file is there to hold information
+ * that I don't want to upload to GitHub; it's not
+ * part of the lessons.
+ */
 
 require 'functions.php';
+require 'data.php';
 
 try {
-    $pdo = new PDO("mysql:host=192.168.64.2; dbname=mytodos", "root", "");
+    $pdo = new PDO('mysql:host=' . $hostName . '; dbname=mytodos', 'port=' . $portNo . '', 'root', '');
 } catch (PDOException $e) {
     die("Error: " . $e->getMessage());
 }
 
-$statement = $pdo->prepare("select * from todos");
+
+$statement = $pdo->prepare('SELECT * FROM todos');
 $statement->execute();
 
 var_dump($statement->fetchAll());
+
 
 require 'index.view.php';
