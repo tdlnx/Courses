@@ -3,7 +3,7 @@
 function dd($varToDump)
 {
     echo '<pre>';
-    var_dump($varToDump);
+    die(var_dump($varToDump));
     echo '</pre>';
 }
 
