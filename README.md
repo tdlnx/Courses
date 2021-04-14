@@ -10,3 +10,5 @@ It's very likely nobody will read this, but if you're reading this now, hi there
 [The Complete 2021 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 
 [PHP Practitioner (Laracasts)](https://laracasts.com/series/php-for-beginners)
+
+[Write PHP Like a Pro: Build a PHP MVC Framework From Scratch](https://www.udemy.com/course/php-mvc-from-scratch/)
