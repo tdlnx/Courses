@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require('partials/head.php'); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Culture</title>
-</head>
-
-<body>
     <h1>Our Culture at <?= $name; ?></h1>
-</body>
 
-</html>
+<?php require('partials/footer.php'); ?>

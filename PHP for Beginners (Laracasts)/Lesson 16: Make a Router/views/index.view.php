@@ -1,30 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require('partials/head.php'); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Lesson 15 Preview</title>
-</head>
+<h1>My Tasks</h1>
 
-<body>
-    <nav>
-        <ul>
-            <li><a href="about.php">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Tasks</h1>
-    <ul>
-        <?php foreach ($tasks as $task) : ?>
-            <li>
-                <?php if ($task->completed) {
-                    echo '<strike>' . $task->description . '</strike>';
-                } else {
-                    echo $task->description;
-                } ?>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-</body>
+<?php foreach ($tasks as $task) : ?>
+    <li>
+        <?php if ($task->completed) : ?>
+            <strike><?= $task->description; ?></strike>
+        <?php else : ?>
+            <?= $task->description; ?>
+        <?php endif; ?>
+    </li>
+<?php endforeach; ?>
 
-</html>
+<?php require('partials/footer.php'); ?>

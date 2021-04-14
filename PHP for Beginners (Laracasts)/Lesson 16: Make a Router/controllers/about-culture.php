@@ -1,5 +1,5 @@
 <?php
 
-$name = 'TestName';
+$name = 'Laracasts';
 
 require 'views/about-culture.view.php';
