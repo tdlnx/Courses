@@ -9,6 +9,4 @@ It's very likely nobody will read this, but if you're reading this now, hi there
 
 [The Complete 2021 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 
-[PHP for Beginners - Become a PHP Master](https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/)
-
-[PHP Practitioner (Laracasts)](https://laracasts.com/series/php-for-beginners) <- This one is MUCH better than the uDemy course. Lessons 1-5 don't have any files here because they were mostly about setting up your code editor, etc. Lesson 6 is where the actual class begins.
+[PHP Practitioner (Laracasts)](https://laracasts.com/series/php-for-beginners)
