@@ -1,12 +1,12 @@
 <?php
 
-namespace app\controllers;
+namespace app\controllers\admin;
 
-class Home extends \core\Controller
+class Users extends \core\Controller
 {
     public function indexAction()
     {
-        echo 'home-index';
+        //
     }
 
     protected function before()

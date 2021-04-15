@@ -36,7 +36,8 @@ class Router
         if ($this->match($url)) {
             $controller = $this->params['controller'];
             $controller = $this->convertToStudlyCaps($controller);
-            $controller = "app\controllers\\$controller";
+            //$controller = "app\controllers\\$controller";
+            $controller = $this->getNamespace() . $controller;
 
             if (class_exists($controller)) {
                 $controller_object = new $controller($this->params);
@@ -44,10 +45,10 @@ class Router
                 $action = $this->params['action'];
                 $action = $this->convertToCamelCase($action);
 
-                if (is_callable([$controller_object, $action])) {
+                if (preg_match('/action$/i', $action) == 0) {
                     $controller_object->$action();
                 } else {
-                    echo "Method {$action} (in controller {$controller}) not found.";
+                    throw new \Exception("Method {$action} in controller {$controller} cannot be called directly.");
                 }
             } else {
                 echo "Controller class {$controller} not found.";
@@ -55,6 +56,17 @@ class Router
         } else {
             'No route matched.';
         }
+    }
+
+    protected function getNamespace()
+    {
+        $namespace = 'app\controllers\\';
+
+        if (array_key_exists('namespace', $this->params)) {
+            $namespace .= $this->params['namespace'] . '\\';
+        }
+
+        return $namespace;
     }
 
     public function getRoutes()
