@@ -4,22 +4,24 @@ require '../core/Router.php';
 
 $router = new Router();
 
-echo "This is what you're looking for:";
-// var_dump($_SERVER['QUERY_STRING']);
-
 $router->add('', ['controller' => 'Home', 'action' => 'index']);
 $router->add('posts', ['controller' => 'Posts', 'action' => 'index']);
-$router->add('posts/new', ['controller' => 'Posts', 'action' => 'new']);
+$router->add('{controller}/{action}');
+$router->add('{controller}/{id:\d+}/{action}}');
 
-// Display routing table
-// echo '<pre>';
-// var_dump($router->getRoutes());
-// echo '</pre>';
+// Dumping to the browser for debugging
+echo "Routing Table:";
+echo '<pre>';
+//var_dump($router->getRoutes());
+echo htmlspecialchars(print_r($router->getRoutes(), true));
+echo '</pre>';
 
-// Match the requested route
+// echo "Query String:";
 $url = $_SERVER['QUERY_STRING'];
+// var_dump($url);
+// ===
 
-var_dump($url);
+
 
 if ($router->match($url)) {
     echo '<pre>';
@@ -28,4 +30,3 @@ if ($router->match($url)) {
 } else {
     echo "No route found for URL {$url}";
 }
-// ===

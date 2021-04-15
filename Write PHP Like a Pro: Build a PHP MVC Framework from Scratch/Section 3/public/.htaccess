@@ -1,7 +1,0 @@
-# Use this .htaccess file to get 'pretty' URLs
-
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
-    RewriteRule ^.*$ index.php [END]
-</IfModule>
