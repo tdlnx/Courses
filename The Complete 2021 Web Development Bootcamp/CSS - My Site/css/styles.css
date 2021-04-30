@@ -2,26 +2,26 @@ body {
     color: #40514e;
     margin: 0;
     text-align: center;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
 }
 
 h1 {
-    color: #66BFBF;
+    color: #66bfbf;
     font-size: 5.625rem;
     line-height: 2;
     margin: 50px auto 0 auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 h2 {
-    color: #66BFBF;
+    color: #66bfbf;
     font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 h3 {
-    color: #11999E;
-    font-family: 'Montserrat', sans-serif;
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
 }
 
 hr {
@@ -43,22 +43,21 @@ hr {
 
 .bottom-container {
     padding: 20px;
-    background-color: #66BFBF;
+    background-color: #66bfbf;
 }
 
 .footer-link {
-    color: #11999E;
-    font-family: 'Montserrat', sans-serif;
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
 }
 
 .middle-container {
-
 }
 
 .copyright {
     color: #eaf6f6;
-    font-size: .75rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .make {
@@ -72,7 +71,7 @@ hr {
 }
 
 .sub-header {
-    font-family: 'Reenie Beanie', cursive;
+    font-family: "Reenie Beanie", cursive;
     font-weight: normal;
 }
 
@@ -103,28 +102,28 @@ hr {
 }
 
 .BUTTON_AMN {
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   margin: 10px auto 60px auto;
-   border-radius: 20px;
-   color: #FFFFFF;
-   font-family: Arial;
-   font-size: 30px;
-   font-weight: 500;
-   padding: 20px;
-   background-color: #66BFBF;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    margin: 10px auto 60px auto;
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px;
+    background-color: #66bfbf;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
 }
 
 .BUTTON_AMN:hover {
-   background: #007580;
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   text-decoration: none;
+    background: #007580;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
 }
 
 /****** ID ******/
