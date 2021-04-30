@@ -11,4 +11,6 @@ It's very likely nobody will read this, but if you're reading this now, hi there
 
 [PHP Practitioner (Laracasts)](https://laracasts.com/series/php-for-beginners)
 
+[Laravel 6 From Scratch (Laracasts)](https://laracasts.com/series/laravel-6-from-scratch)
+
 [Write PHP Like a Pro: Build a PHP MVC Framework From Scratch](https://www.udemy.com/course/php-mvc-from-scratch/)
